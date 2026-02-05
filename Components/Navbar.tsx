@@ -25,25 +25,25 @@ export const Navbar = () => {
 
 
     return (
-        <div id="navBanner" className="flex border-b-3 overflow-auto">
+        <div id="navBanner" className="flex border-b-3 overflow-auto text-xl">
             <Link href="/">
                 <div className="p-5">
-                    <h2 className="Horizon">Félix&nbsp;Prudhomme</h2>
+                    <h3 className="Horizon">Félix&nbsp;Prudhomme</h3>
                 </div>
             </Link>
-            <Link href="/CV-liens">
+            <Link href="/curriculum ">
                 <div className="p-5 border-l-3">
-                    <h2 className="Horizon">CV&nbsp;+&nbsp;Liens</h2>
+                    <h3 className="Horizon">Curriculum</h3>
                 </div>
             </Link>
             <Link href="/projets">
                 <div className="p-5 border-l-3">
-                    <h2 className="Horizon">Mes&nbsp;projets</h2>
+                    <h3 className="Horizon">Mes&nbsp;projets</h3>
                 </div>
             </Link>
             <Link href="/hobbies">
                 <div className="p-5 border-l-3">
-                    <h2 className="Horizon">hobbies</h2>
+                    <h3 className="Horizon">hobbies</h3>
                 </div>
             </Link>
         </div>

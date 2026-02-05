@@ -64,20 +64,16 @@
   font-family: 'HorizonOutlined', sans-serif;
 }
 
-h1 {
-  font-size: xx-large;
-}
-
-h2 {
-  font-size: x-large;
-}
-
-h3 {
-  font-size: larger;
-}
-
 .bg-cloud {
   background-image: url('/cloud.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0
+}
+
+.bg-blob {
+  background-image: url('/blob.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
