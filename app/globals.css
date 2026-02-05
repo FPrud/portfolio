@@ -45,8 +45,15 @@
   --color-section-border: rgba(74, 74, 74, 0.2);
 }
 
+.border,
 :root {
   font-family: 'SpaceMono', sans-serif;
+  color: var(--color-primary)
+}
+
+::-webkit-scrollbar {
+  scroll-behavior:smooth;
+  display: none;
 }
 
 .Horizon {
