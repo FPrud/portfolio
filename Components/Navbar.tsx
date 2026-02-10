@@ -27,23 +27,31 @@ export const Navbar = () => {
     return (
         <div id="navBar" className="flex border-b-3 overflow-auto text-xl">
             <Link href="/" className="p-5">
-                    <h3>
-                        <span className="Horizon">Félix</span>
-                        <span className="HorizonOutlined font-black">Prudhomme</span>
-                    </h3>
+                <h3>
+                    <span className="Horizon">Félix</span>
+                    <span className="HorizonOutlined font-black">Prudhomme</span>
+                </h3>
             </Link>
-            <Link href="/curriculum"  className="p-5 border-l-3">
-                    <h3 className="Horizon">Curriculum</h3>
+            <Link href="/curriculum" className="p-5 border-l-3">
+                <h3 className="Horizon">Curriculum</h3>
             </Link>
             <Link href="/projets" className="p-5 border-l-3">
-                    <h3 className="Horizon">Projets</h3>
+                <h3 className="Horizon">Projets</h3>
             </Link>
-            <Link href="/hobbies" className="p-5 border-l-3">
+            {/* <Link href="/hobbies" className="p-5 border-l-3">
                     <h3 className="Horizon">Loisirs</h3>
             </Link>
             <Link href="/blog" className="p-5 border-l-3">
                     <h3 className="Horizon">Blog</h3>
-            </Link>
+            </Link> */}
+
+            <div className="p-5 border-l-3 cursor-not-allowed">
+                <h3 className="Horizon">Loisirs</h3>
+            </div>
+            <div className="p-5 border-l-3 cursor-not-allowed">
+                <h3 className="Horizon">Blog</h3>
+            </div>
+            
         </div>
     );
 };

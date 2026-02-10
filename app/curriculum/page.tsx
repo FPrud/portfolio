@@ -32,15 +32,15 @@ export default function curriculumPage() {
 
   return (
     <main id="page entière" className="flex flex-1 flex-col  w-full p-5 overflow-auto">
-      <h1 id="title" className="text-center Horizon text-3xl">Curriculum</h1>
-      <p id="presentation" className="pb-5" >Le CV est réalisé en HTML + CSS avec Tailwind. Cette page est volontairement non-responsive, car c'est un CV au format strictement A4, dont le format doit rester fixe. Cliquez sur le bouton pour le convertir en PDF, en utilisant la fonction useReactToPrint.</p>
+      <h1 id="title" className="text-center Horizon text-3xl pb-5">Curriculum</h1>
+      <p id="presentation" className="pb-5">Mon CV est réalisé en HTML + CSS avec Tailwind. Cette page est volontairement non-responsive, car c'est un CV au format A4, dont le ratio doit rester fixe. Cliquez sur le bouton pour le convertir en PDF, en utilisant la fonction useReactToPrint.</p>
       <button
         onClick={handleDownloadPDF}
-        className="mb-5 p-3 bg-(--color-accent) text-(--color-background) rounded-lg self-center"
+        className="mb-5 p-3 bg-(--color-accent) text-(--color-background) rounded-lg self-center cursor-pointer"
       >
         Télécharger en PDF
       </button>
-
+      <p id="presentation" className="pb-5">Dans le menu de votre navigateur, choisissez la destination "Fichier PDF" pour conserver les liens cliquables et le texte sélectionnable.</p>
       <div className="flex justify-center min-w-fit">
         <div ref={cvRef} id="CV" className="flex flex-col w-260 aspect-[1/1.414] bg-(--color-background) p-15 shadow-2xl bg-blob ">
 
