@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export const Navbar = () => {
 
     useEffect(() => {
-        const element = document.querySelector("#navBanner") as HTMLElement;
+        const element = document.querySelector("#navBar") as HTMLElement;
 
         const handleWheel = (event: WheelEvent) => {
             event.preventDefault();
@@ -25,13 +25,16 @@ export const Navbar = () => {
 
 
     return (
-        <div id="navBanner" className="flex border-b-3 overflow-auto text-xl">
+        <div id="navBar" className="flex border-b-3 overflow-auto text-xl">
             <Link href="/">
                 <div className="p-5">
-                    <h3 className="Horizon">Félix&nbsp;Prudhomme</h3>
+                    <h3>
+                        <span className="Horizon">Félix</span>
+                        <span className="HorizonOutlined font-black">Prudhomme</span>
+                    </h3>
                 </div>
             </Link>
-            <Link href="/curriculum ">
+            <Link href="/curriculum">
                 <div className="p-5 border-l-3">
                     <h3 className="Horizon">Curriculum</h3>
                 </div>
