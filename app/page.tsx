@@ -5,12 +5,9 @@ export default function Home() {
         <h1 id="title" className="text-center Horizon text-3xl pb-5">Bienvenue</h1>
         <p className="text-justify mb-5">
           Bonjour et bienvenue sur mon portfolio. En guise d'introduction, je vais vous présenter le contexte de sa création, ainsi que mes objectifs à travers ce site. <br />
-          Arrivé au terme de mon premier cycle de formation chez Ada Tech School, au campus de Paris, j'ai décidé de réaliser ce portfolio afin d'en faire une vitrine pour présenter mes projets. Durant sa réalisation, j'ai réalisé que j'avais envie que mon premier vrai site web soit plus qu'une simple gallerie de projets. J'ai voulu faire de mon portfolio un projet à part entière. J'en ai profité pour faire une recherche esthétique, mais également de developper des features qui, selon moi, démontrent une envie de faire plus que le minimum. Vous trouverez par exemple :
+          Arrivé au terme de mon premier cycle de formation chez Ada Tech School, au campus de Paris, j'ai décidé de publier un portfolio afin d'en faire une vitrine pour présenter mes projets. Durant sa réalisation, j'ai pris conscience que j'avais envie que mon premier vrai site web soit plus qu'une simple gallerie de projets. J'ai voulu faire de mon portfolio un projet à part entière. J'en ai profité pour faire une recherche esthétique, mais également de developper des features qui, selon moi, démontrent une envie de faire plus que le minimum. Vous trouverez par exemple :
         </p>
         <ul className="list-disc list-inside">
-          <li>
-            Une barre de navigation qui peut défiler à l'horizontal au scroll de la souris, si l'écran ne l'affiche pas entière.
-          </li>
           <li>
             Un CV réalisé directement en HTML et CSS avec Tailwind, car bien que capable d'utiliser Canva ou autres outils de design, se sont ces outils de conception que je manipule le mieux.
           </li>
