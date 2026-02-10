@@ -33,7 +33,7 @@ export default function curriculumPage() {
   return (
     <main id="page entière" className="flex flex-1 flex-col  w-full p-5 overflow-auto">
       <h1 id="title" className="text-center Horizon text-3xl pb-5">Curriculum</h1>
-      <p id="presentation" className="pb-5">Mon CV est réalisé en HTML + CSS avec Tailwind. Cette page est volontairement non-responsive, car c'est un CV au format A4, dont le ratio doit rester fixe. Cliquez sur le bouton pour le convertir en PDF, en utilisant la fonction useReactToPrint.</p>
+      <p id="presentation" className="pb-5">Mon CV est réalisé en HTML + CSS avec Tailwind. Cliquez sur le bouton pour le convertir en PDF, en utilisant la fonction useReactToPrint. Cette page est volontairement non-responsive, car je voulais dans un premier temps simuler le rapport de proportions d'une page A4, afin que mes éléments ne glissent pas. Une version consultable en ligne sur un appareil mobile est en cours de conception.</p>
       <button
         onClick={handleDownloadPDF}
         className="mb-5 p-3 bg-(--color-accent) text-(--color-background) rounded-lg self-center cursor-pointer"

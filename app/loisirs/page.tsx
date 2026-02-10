@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-export default function blogPage() {
+export default function hobbiesPage() {
 
     return (
         <main id="page entière" className="flex flex-col flex-1 p-5 bg-cloud overflow-auto">
             <div id="article" className="flex flex-col">
-                <h1 id="title" className="text-center Horizon text-3xl pb-5">Blog</h1>
+                <h1 id="title" className="text-center Horizon text-3xl pb-5">Loisirs</h1>
                 <p id="presentation" className="self-center pb-5">
                     Cette section arrive vite !
                 </p>
