@@ -2,11 +2,12 @@ import Link from "next/link";
 
 export default function curriculumPage() {
   return (
-    <main id="page entière" className="flex flex-1 flex-col p-5 bg-blob overflow-y-auto">
-      <div id="CV" className="flex flex-col">
+    <main id="page entière" className="flex flex-1 flex-col p-5 bg-blob overflow-auto items-center">
+
+      <div id="CV" className="flex flex-col w-250 aspect-[1/1.414] bg-(--color-background) p-20 shadow-2xl">
 
         <div id="title" className="flex flex-wrap justify-center border-b-3">
-          <h1 className="flex flex-wrap text-5xl break-all p-5">
+          <h1 className="flex flex-wrap justify-center text-5xl break-all p-5">
             <span className="Horizon">Félix</span>
             <span className="HorizonOutlined font-black">Prudhomme</span>
           </h1>
@@ -44,7 +45,7 @@ export default function curriculumPage() {
               </div>
               <div id="jobSearch" className="pb-3 text-justify">
                 <p className="Intro">
-                  Développeur fullstack en recherche d’alternance : 4j/semaine pendant 12 mois, à partir de mai 2026.
+                  Développeur fullstack en recherche d’alter-<span>nance</span>  : 4j par semaine pendant 12 mois, à partir de mai 2026.
                 </p>
               </div>
               <div id="shortBio" className="text-justify">
@@ -55,14 +56,14 @@ export default function curriculumPage() {
             </div>
 
             <div id="skills" className="pt-5 pr-5 pb-5 border-b-3">
-              <h2 className="Intro pb-3">Compétences développeur</h2>
-              <ul className="Chocolates list-disc list-inside">
+              <h2 className="Intro">Compétences développeur</h2>
+              <ul className="Chocolates list-disc list-inside  pb-3">
                 <li>Typescript, React, Next.js</li>
                 <li>PostgreSQL, Express, ORM, BetterAuth</li>
                 <li>HTML, CSS, Tailwind</li>
                 <li>Github</li>
               </ul>
-              <h2 className="Intro pb-3">Autres compétences</h2>
+              <h2 className="Intro">Autres compétences</h2>
               <ul className="Chocolates list-disc list-inside">
                 <li>Bureautique Miscrosoft et Google</li>
                 <li>Figma, Canva, Photoshop, After Effects</li>
@@ -93,7 +94,8 @@ export default function curriculumPage() {
               <div id="2-colums" className="flex flex-row gap-5 pb-5">
                 <div id="col-1" className="flex flex-col w-1/2">
                   <h3 className="ChocolatesBold">Ada Tech School</h3>
-                  <p className="Chocolates">2025 - 2026, Paris
+                  <p className="Chocolates">
+                    2025 - 2026, Paris
                     <br /><span className="ChocolatesBold">Diplôme :</span> RNCP 6 - Développeur et concepteur d'applications
                     <br /><span className="ChocolatesBold">Stack :</span>  Typescript, React, Next.js, PostgreSQL, Express, ORM, BetterAuth, HTML, CSS, Tailwind, Github
                   </p>
@@ -101,7 +103,8 @@ export default function curriculumPage() {
 
                 <div id="col-2" className="flex flex-col w-1/2">
                   <h3 className="ChocolatesBold">Université de Bourgogne</h3>
-                  <p className="Chocolates">2016, Dijon
+                  <p className="Chocolates">
+                    2016, Dijon
                     <br /><span className="ChocolatesBold">Diplôme :</span> Licence en musicologie
                     <br /><span className="ChocolatesBold">Expériences :</span> Recherches académiques, rédaction de mémoire
                   </p>
@@ -118,7 +121,8 @@ export default function curriculumPage() {
                 <div id="col-1" className="flex flex-col w-1/2">
                   <Link href="https://cineducoinadatechschool.vercel.app/" target="_blank"><h3 className="ChocolatesBold">Collab'</h3></Link>
                   <p className="Chocolates text-justify">
-                    Une application d’annonces permettant aux musiciens amateurs de se constituer un réseau. Rechercher des musiciens avec lesquels collaborer, ou former un groupe.
+                    Paris, 2026
+                    <br />Une application d’annonces permettant aux musiciens amateurs de se constituer un réseau. Rechercher des musiciens avec lesquels collaborer, ou former un groupe.
                     <br /><span className="ChocolatesBold">Features :</span> Création d'une carte de visite, publication d’annonces et de commentaires, recherche par mots-clés, panneaux d’admins.
                     <br /><span className="ChocolatesBold">Stack :</span> Typescript, Next.js, ORM, Neon, BetterAuth, Tailwind
                     <br /><Link href="https://github.com/FPrud/collab-1.0" target="_blank" className="ChocolatesBold">Voir le projet sur Github</Link>
@@ -129,7 +133,8 @@ export default function curriculumPage() {
                 <div id="col-2" className="flex flex-col w-1/2">
                   <Link href="https://cineducoinadatechschool.vercel.app/" target="_blank"><h3 className="ChocolatesBold">CinéDuCoin</h3></Link>
                   <p className="Chocolates text-justify">
-                    Application permettant de trouver tous les cinémas se trouvant aux alentours, avec une recherche par adresse et un paramètre ajustable de distance.
+                    Paris, 2025
+                    <br />Application permettant de trouver tous les cinémas se trouvant aux alentours, avec une recherche par adresse et un paramètre ajustable de distance.
                     <br /><span className="ChocolatesBold">Features :</span> Fetch de deux APIs en chaîne, auto-complétion de recherche, calcul de distance par coordonnées géoloc.
                     <br /><span className="ChocolatesBold">Stack :</span> HTML, CSS, Javascript
                     <br /><Link href="https://github.com/FPrud/collab-1.0" target="_blank" className="ChocolatesBold">Voir le projet sur Github</Link>
