@@ -15,7 +15,7 @@ export default function Home() {
             Un bouton permettant de télécharger le CV, en le convertissant en pdf. Une feature qui me semble utile, à la fois pour les visiteur·euses qui souhaitent le consulter ou l'enregistrer, mais aussi pour moi, car je peux éditer exposer mon CV en ligne, le mettre à jour régulièrement, et garder facilement ma version téléchargée la plus récente à jour.
           </li>
           <li>
-            En construction : la section Projets permetant de présenter les projets d'école, individuels et collectifs, ainsi que les projets perso, que j'ai pu développer sur mon temps libre
+            En construction : la section Projets permetant de présenter les projets d'école, individuels et collectifs, ainsi que les projets perso, que j'ai pu développer sur mon temps libre.
           </li>
           <li>
             En construction : le blog, qui me permet chroniquer mes actualités de developpeur sur une autre plateforme que LinkedIn ou GitHub, qui ne me motivent pas toujours.
