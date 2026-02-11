@@ -53,7 +53,7 @@
   --color-primary: #000000;
   --color-secondary: #44373b;
   --color-accent: #9581c5;
-  --color-background: #fdf7f0;
+  --color-background: rgb(253, 247, 240);
   --color-background-alt: #fdf7f0;
   --color-surface: #ffffff;
   --color-surface-dark: #2d2d2d;
@@ -98,7 +98,7 @@
 }
 
 .bg-cloud {
-  background-image: linear-gradient(rgb(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/cloud.webp');
+  background-image: linear-gradient(rgb(253, 247, 240, 0.5), rgba(253, 247, 240, 0.5)), url('/cloud.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -106,7 +106,7 @@
 }
 
 .bg-blob {
-  background-image: linear-gradient(rgb(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/blob.webp');
+  background-image: linear-gradient(rgb(253, 247, 240, 0.5), rgba(253, 247, 240, 0.5)), url('/blob.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
