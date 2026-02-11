@@ -98,19 +98,17 @@
 }
 
 .bg-cloud {
-  background-image: url('/cloud.webp');
+  background-image: linear-gradient(rgb(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/cloud.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: local;
-  z-index: 0
 }
 
 .bg-blob {
-  background-image: url('/blob.webp');
+  background-image: linear-gradient(rgb(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/blob.webp');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: local;
-  z-index: 0
 }
