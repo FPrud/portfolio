@@ -42,7 +42,8 @@ export default function curriculumPage() {
       </button>
       <p id="presentation" className="pb-5">Dans le menu de votre navigateur, choisissez la destination "Fichier PDF" pour conserver les liens cliquables et le texte sélectionnable.</p>
       <div className="flex justify-center min-w-fit">
-        <div ref={cvRef} id="CV" className="flex flex-col w-260 aspect-[1/1.414] bg-(--color-background) p-15 shadow-2xl bg-blob">
+
+        <div ref={cvRef} id="CV" className="flex flex-col justify-center w-260 aspect-[1/1.414] bg-(--color-background) p-15 shadow-2xl bg-blob">
 
           <div id="title" className="flex flex-wrap justify-center border-b-3">
             <h1 className="flex flex-wrap justify-center text-5xl break-all p-5">
