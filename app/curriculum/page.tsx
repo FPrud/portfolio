@@ -33,7 +33,7 @@ export default function curriculumPage() {
   return (
     <main id="page entière" className="flex flex-1 flex-col  w-full p-5 overflow-auto">
       <h1 id="title" className="text-center Horizon text-3xl pb-5">Curriculum</h1>
-      <p id="presentation" className="pb-5">Mon CV est réalisé en HTML + CSS avec Tailwind. Cliquez sur le bouton pour le convertir en PDF, en utilisant la fonction useReactToPrint. Cette page est volontairement non-responsive, car je voulais dans un premier temps simuler le rapport de proportions d'une page A4, afin que mes éléments ne glissent pas. Une version consultable en ligne sur un appareil mobile est en cours de conception.</p>
+      <p id="presentation" className="pb-5">Mon CV est réalisé en HTML + CSS avec Tailwind. Cliquez sur le bouton pour le convertir en PDF, en utilisant la fonction useReactToPrint. Cette page est volontairement non responsive, car je voulais dans un premier temps simuler le rapport de proportions d'une page A4, afin que mes éléments ne glissent pas. Une version consultable en ligne sur un appareil mobile est en cours de conception.</p>
       <button
         onClick={handleDownloadPDF}
         className="mb-5 p-3 bg-(--color-accent) text-(--color-background) rounded-lg self-center cursor-pointer"
@@ -42,7 +42,7 @@ export default function curriculumPage() {
       </button>
       <p id="presentation" className="pb-5">Dans le menu de votre navigateur, choisissez la destination "Fichier PDF" pour conserver les liens cliquables et le texte sélectionnable.</p>
       <div className="flex justify-center min-w-fit">
-        <div ref={cvRef} id="CV" className="flex flex-col w-260 aspect-[1/1.414] bg-(--color-background) p-15 shadow-2xl bg-blob ">
+        <div ref={cvRef} id="CV" className="flex flex-col w-260 aspect-[1/1.414] bg-(--color-background) p-15 shadow-2xl bg-blob">
 
           <div id="title" className="flex flex-wrap justify-center border-b-3">
             <h1 className="flex flex-wrap justify-center text-5xl break-all p-5">
@@ -55,7 +55,7 @@ export default function curriculumPage() {
 
             <div id="col-1" className="flex flex-col w-1/3 text-left text-wrap">
               <Link href="https://felixprudhomme.website/" target="_blank">Felixprudhomme.website</Link>
-              <Link href="https://github.com/FPrud" target="_blank">Github.com/fprud</Link>
+              <Link href="https://github.com/FPrud" target="_blank">GitHub.com/fprud</Link>
               <Link href="https://www.linkedin.com/in/f%C3%A9lix-prudhomme-2767a6330/" target="_blank">Linkedin.com/fprud</Link>
             </div>
 
@@ -84,7 +84,7 @@ export default function curriculumPage() {
                 </div>
                 <div id="jobSearch" className="pb-3 text-justify">
                   <p className="Intro">
-                    Développeur fullstack en recherche d’alternance  : 4j par semaine pendant 12 mois, à partir de mai 2026.
+                    Développeur fullstack en recherche d’alternance : 4j par semaine pendant 12 mois, à partir de mai 2026.
                   </p>
                 </div>
                 <div id="shortBio" className="text-justify">
@@ -97,17 +97,17 @@ export default function curriculumPage() {
               <div id="skills" className="pt-5 pr-5 pb-5 border-b-3">
                 <h2 className="Intro">Compétences développeur</h2>
                 <ul className="Chocolates list-disc list-inside  pb-3">
-                  <li>Typescript, React, Next.js</li>
+                  <li>TypeScript, React, Next.js</li>
                   <li>PostgreSQL, Express, ORM, BetterAuth</li>
                   <li>HTML, CSS, Tailwind</li>
-                  <li>Github</li>
+                  <li>GitHub</li>
                 </ul>
                 <h2 className="Intro">Autres compétences</h2>
                 <ul className="Chocolates list-disc list-inside">
-                  <li>Bureautique Miscrosoft et Google</li>
+                  <li>Bureautique Microsoft et Google</li>
                   <li>Figma, Canva, Photoshop, After Effects</li>
                   <li>Animation, prise de parole en public</li>
-                  <li>Méthode agile, gestion de projets</li>
+                  <li>Méthodes agiles, gestion de projets</li>
                   <li>Anglais</li>
                 </ul>
               </div>
@@ -117,7 +117,7 @@ export default function curriculumPage() {
                 <ul className="Chocolates list-disc list-inside">
                   <li>Photographie argentique : développement et tirages manuels</li>
                   <li>Enregistrement de podcasts en mix</li>
-                  <li>Modding jeux vidéo</li>
+                  <li>Modding de jeux vidéo</li>
                 </ul>
               </div>
 
@@ -130,13 +130,13 @@ export default function curriculumPage() {
                 <h2 className="Intro pb-3">
                   Formations
                 </h2>
-                <div id="2-colums" className="flex flex-row gap-5 pb-5">
+                <div id="2-columns" className="flex flex-row gap-5 pb-5">
                   <div id="col-1" className="flex flex-col w-1/2">
                     <h3 className="ChocolatesBold">Ada Tech School</h3>
                     <p className="Chocolates">
                       2025 - 2026, Paris
                       <br /><span className="ChocolatesBold">Diplôme :</span> RNCP 6 - Développeur et concepteur d'applications
-                      <br /><span className="ChocolatesBold">Stack :</span>  Typescript, React, Next.js, PostgreSQL, Express, ORM, BetterAuth, HTML, CSS, Tailwind, Github
+                      <br /><span className="ChocolatesBold">Stack :</span>  TypeScript, React, Next.js, PostgreSQL, Express, ORM, BetterAuth, HTML, CSS, Tailwind, GitHub
                     </p>
                   </div>
 
@@ -161,10 +161,10 @@ export default function curriculumPage() {
                     <Link href="https://cineducoinadatechschool.vercel.app/" target="_blank"><h3 className="ChocolatesBold">Collab'</h3></Link>
                     <p className="Chocolates text-justify">
                       Paris, 2026
-                      <br />Une application d’annonces permettant aux musiciens amateurs de se constituer un réseau. Rechercher des musiciens avec lesquels collaborer, ou former un groupe.
-                      <br /><span className="ChocolatesBold">Features :</span> Création d'une carte de visite, publication d’annonces et de commentaires, recherche par mots-clés, panneaux d’admins.
-                      <br /><span className="ChocolatesBold">Stack :</span> Typescript, Next.js, ORM, Neon, BetterAuth, Tailwind
-                      <br /><Link href="https://github.com/FPrud/collab-1.0" target="_blank" className="ChocolatesBold">Voir le projet sur Github</Link>
+                      <br />Une application d’annonces permettant aux musiciens amateurs de se constituer un réseau. Rechercher des musiciens avec qui collaborer, ou former un groupe.
+                      <br /><span className="ChocolatesBold">Features :</span> Création d'une carte de visite, publication d’annonces et de commentaires, recherche par mots-clés, panneaux d’administration.
+                      <br /><span className="ChocolatesBold">Stack :</span> TypeScript, Next.js, ORM, Neon, BetterAuth, Tailwind
+                      <br /><Link href="https://github.com/FPrud/collab-1.0" target="_blank" className="ChocolatesBold">Voir le projet sur GitHub</Link>
                       <br /><Link href="https://collab-1-0.vercel.app/" target="_blank" className="ChocolatesBold">Voir le projet déployé</Link>
                     </p>
                   </div>
@@ -173,10 +173,10 @@ export default function curriculumPage() {
                     <Link href="https://cineducoinadatechschool.vercel.app/" target="_blank"><h3 className="ChocolatesBold">CinéDuCoin</h3></Link>
                     <p className="Chocolates text-justify">
                       Paris, 2025
-                      <br />une application permettant de trouver tous les cinémas se trouvant aux alentours, avec une recherche par adresse et un paramètre ajustable de distance.
-                      <br /><span className="ChocolatesBold">Features :</span> Fetch de deux APIs en chaîne, auto-complétion de recherche, calcul de distance par coordonnées géolocalisées.
+                      <br />Une application permettant de trouver tous les cinémas se trouvant aux alentours, avec une recherche par adresse et un paramètre ajustable de distance.
+                      <br /><span className="ChocolatesBold">Features :</span> Fetch de deux API en chaîne, autocomplétion de recherche, calcul de distance par coordonnées géolocalisées.
                       <br /><span className="ChocolatesBold">Stack :</span> HTML, CSS, Javascript
-                      <br /><Link href="https://github.com/FPrud/collab-1.0" target="_blank" className="ChocolatesBold">Voir le projet sur Github</Link>
+                      <br /><Link href="https://github.com/FPrud/collab-1.0" target="_blank" className="ChocolatesBold">Voir le projet sur GitHub</Link>
                       <br /><Link href="https://collab-1-0.vercel.app/" target="_blank" className="ChocolatesBold">Voir le projet déployé</Link>
                     </p>
                   </div>
@@ -193,8 +193,8 @@ export default function curriculumPage() {
                     <h3 className="ChocolatesBold">La Ligue de l’enseignement</h3>
                     <p className="Chocolates text-justify">
                       2022 - 2025, Paris
-                      <br />Chargé de mission Vie Fédérative : accompagnement d’associations dans leurs démarches de recherches de partenariats, de financements, et dans l’accueil de volontaires en service civique. Création et animation de formations professionnelles.
-                      <br /><span className="ChocolatesBold">Expérience :</span> gestion de relations partenariales, veille administrative, animation de formations professionelles.
+                      <br />Chargé de mission Vie Fédérative : accompagnement d’associations dans leurs démarches de recherche de partenariats, de financements, et dans l’accueil de volontaires en service civique. Création et animation de formations professionnelles.
+                      <br /><span className="ChocolatesBold">Expérience :</span> gestion de relations partenariales, veille administrative, animation de formations professionnelles.
                     </p>
                   </div>
 
@@ -202,7 +202,7 @@ export default function curriculumPage() {
                     <h3 className="ChocolatesBold">La Ligue de l’enseignement</h3>
                     <p className="Chocolates text-justify">
                       2018 - 2022, Paris
-                      <br />Assistant administratif : création des contrats de services civique pour la fédération de Paris. Création et animation de formations d’accompagnement pour les volontaires. Réforme et optimisation des processus administratifs.
+                      <br />Assistant administratif : création des contrats de Service Civique pour la fédération de Paris. Création et animation de formations d’accompagnement pour les volontaires. Réforme et optimisation des processus administratifs.
                       <br /><span className="ChocolatesBold">Expérience :</span> organisation, rigueur, respect des deadlines,  programmation d’automatisations pour les processus administratifs répétitifs, travail en équipe.
                     </p>
                   </div>
