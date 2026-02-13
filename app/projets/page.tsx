@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Footer from "@/Components/Footer";
 
 export default function projectsPage() {
 
@@ -6,14 +6,11 @@ export default function projectsPage() {
         <main id="page entière" className="flex flex-col flex-1 p-5 bg-cloud overflow-auto">
             <div id="article" className="flex flex-col">
                 <h1 id="title" className="text-center Horizon text-3xl pb-5">Projets</h1>
-                <p id="presentation" className="self-center pb-5">
-                    Cette section arrive vite !
+                <p id="content" className="self-center pb-5">
+                    Voici une sélection des projets que j'ai réalisé, ou auxquels j'ai participé. J'essaye, dans la mesure du possible, de déployer et maintenir ces projets pour conserver leur trace le plus longtemps possible. N'hésitez pas à y faire un tour et essayer les outils.
                 </p>
-                <Link href="/" className="self-center pb-5">
-                    <h3 className="Horizon">Retour à l'accueil</h3>
-                </Link>
-                <img src="/star.svg" alt="déco étoile" className="h-20 mt-5 self-center" />
             </div>
+            <Footer />
         </main >
     );
 }

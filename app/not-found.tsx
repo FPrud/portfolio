@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Footer from "@/Components/Footer";
 
 export default function notFound() {
 
@@ -9,11 +9,8 @@ export default function notFound() {
                 <p id="content" className="self-center pb-5">
                     Désolé, la page que vous recherchez n'existe pas.
                 </p>
-                <Link href="/" className="self-center justify-center">
-                    <h3 className="Horizon">Retour à l'accueil</h3>
-                </Link>
             </div>
-            <img src="/star.svg" alt="déco étoile" className="h-20 mt-5 self-center" />
+            <Footer />
         </main >
     );
-}
+};
