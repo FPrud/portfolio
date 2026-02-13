@@ -1,4 +1,5 @@
 import Footer from "@/Components/Footer";
+import Project from "@/Components/Project";
 
 export default function projectsPage() {
 
@@ -10,6 +11,39 @@ export default function projectsPage() {
                     Voici une sélection des projets que j'ai réalisé, ou auxquels j'ai participé. J'essaye, dans la mesure du possible, de déployer et maintenir ces projets pour conserver leur trace le plus longtemps possible. N'hésitez pas à y faire un tour et essayer les outils.
                 </p>
             </div>
+
+            <Project
+                title="Mon projet 1"
+                description="Description du projet."
+                imageSrc="/images/mon-projet.png"
+                githubUrl="https://github.com/mon-compte/mon-projet"
+                demoUrl="https://mon-projet.example.com"
+            />
+            
+            <Project
+                title="Mon projet 2"
+                description="Description du projet."
+                imageSrc="/images/mon-projet.png"
+                githubUrl="https://github.com/mon-compte/mon-projet"
+                demoUrl="https://mon-projet.example.com"
+            />
+            
+            <Project
+                title="Mon projet 3"
+                description="Description du projet."
+                imageSrc="/images/mon-projet.png"
+                githubUrl="https://github.com/mon-compte/mon-projet"
+                demoUrl="https://mon-projet.example.com"
+            />
+            
+            <Project
+                title="Mon projet 4"
+                description="Description du projet."
+                imageSrc="/images/mon-projet.png"
+                githubUrl="https://github.com/mon-compte/mon-projet"
+                demoUrl="https://mon-projet.example.com"
+            />
+
             <Footer />
         </main >
     );
