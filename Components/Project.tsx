@@ -32,10 +32,10 @@ export default function Project({
         <div id="project" className="relative flex flex-col border-2 mb-5 p-5 bg-(--color-background) rounded-md">
             {/* Ligne de jonction */}
             {isLeft && (
-                <div id="junction-left" className="absolute top-1/2 -right-5 w-5 h-0.5 bg-(--color-primary)"></div>
+                <div id="junction-left" className="absolute top-1/2 -right-5.25 w-5.25 h-0.5 bg-(--color-primary)"></div>
             )}
             {!isLeft && isLeft !== undefined && (
-                <div id="junction-right" className="absolute top-1/2 -left-5 w-5 h-0.5 bg-(--color-primary)"></div>
+                <div id="junction-right" className="absolute top-1/2 -left-5.25 w-5.25 h-0.5 bg-(--color-primary)"></div>
             )}
             
             <h2 id="project-title" className="text-center Horizon text-xl pb-5"><Link id="github-link" href={githubUrl} target="_blank">{title}</Link></h2>
