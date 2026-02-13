@@ -13,18 +13,18 @@ export default async function projectsPage() {
                     Voici une sélection des projets que j'ai réalisé, ou auxquels j'ai participé. J'essaye, dans la mesure du possible, de déployer et maintenir ces projets pour conserver leur trace le plus longtemps possible. N'hésitez pas à y faire un tour et essayer les outils.
                 </p>
             </div>
-
-            {projects.map((project: any) => (
-                <Project
-                    key={project.id}
-                    title={project.name}
-                    description={project.description || "Pas de description"}
-                    imageSrc="/images/placeholder.png"
-                    githubUrl={project.html_url}
-                    demoUrl={project.homepage || project.html_url}
-                />
-            ))}
-
+            <div id="projects-container" className="flex flex-col items-start">
+                {projects.map((project: any) => (
+                    <Project
+                        key={project.id}
+                        title={project.name}
+                        description={project.description || "Pas de description"}
+                        imageSrc="/images/placeholder.png"
+                        githubUrl={project.html_url}
+                        demoUrl={project.homepage || project.html_url}
+                    />
+                ))}
+            </div>
             <Footer />
         </main>
     );
