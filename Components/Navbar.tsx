@@ -36,19 +36,16 @@ export const Navbar = () => {
                 <h3 className="Horizon">Curriculum</h3>
             </Link>
             
-            {/* <Link href="/projets" className="p-5 border-l-2">
+            <Link href="/projets" className="p-5 border-l-2">
                 <h3 className="Horizon">Projets</h3>
             </Link>
-            <Link href="/blog" className="p-5 border-l-2">
+            {/* <Link href="/blog" className="p-5 border-l-2">
                     <h3 className="Horizon">Blog</h3>
             </Link>
             <Link href="/loisirs" className="p-5 border-l-2">
                     <h3 className="Horizon">Loisirs</h3>
             </Link> */}
 
-            <div className="p-5 border-l-2 cursor-not-allowed">
-                <h3 className="Horizon">Projets</h3>
-            </div>
             <div className="p-5 border-l-2 cursor-not-allowed">
                 <h3 className="Horizon">Blog</h3>
             </div>

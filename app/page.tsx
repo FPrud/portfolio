@@ -2,7 +2,8 @@ export default function Home() {
   return (
     <main id="page entière" className="flex flex-col flex-1 p-5 bg-cloud overflow-auto">
       <div id="article" className="flex flex-col">
-        <h1 id="title" className="text-center Horizon text-3xl pb-5">Bienvenue</h1>
+        <h1 id="title" className="text-center Horizon text-4xl">Félix<span className="HorizonOutlined font-black">Prudhomme</span></h1>
+        <h2 id="subtitle" className="text-center text-3xl pb-5">Développeur web full stack</h2>
         <p id="content" className="text-justify mb-5">
           Bonjour et bienvenue sur mon portfolio. En guise d'introduction, je vais vous présenter le contexte de sa création, ainsi que mes objectifs pour ce site. <br /> Arrivé au terme de mon premier cycle de formation chez Ada Tech School, au campus de Paris, j'ai décidé de publier un portfolio afin d'en faire une vitrine pour présenter mes projets. Durant sa réalisation, j'ai pris conscience que j'avais envie que mon premier vrai site web soit plus qu'une simple galerie de projets. J'ai voulu faire de mon portfolio un projet à part entière. J'en ai profité pour faire une recherche esthétique, mais également de développer des fonctionnalités qui démontrent une envie de faire plus que le minimum. Vous trouverez par exemple :
         </p>

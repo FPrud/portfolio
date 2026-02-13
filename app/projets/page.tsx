@@ -1,10 +1,12 @@
 import Footer from "@/Components/Footer";
 import Project from "@/Components/Project";
+import { getProjects } from "@/Actions/getProjects";
 
-export default function projectsPage() {
+export default async function projectsPage() {
+    const projects = await getProjects();
 
     return (
-        <main id="page entière" className="flex flex-col flex-1 p-5 bg-cloud overflow-auto">
+        <main id="page entière" className="flex flex-col flex-1 p-5 bg-cloud-2 overflow-auto">
             <div id="article" className="flex flex-col">
                 <h1 id="title" className="text-center Horizon text-3xl pb-5">Projets</h1>
                 <p id="content" className="self-center pb-5">
@@ -12,39 +14,18 @@ export default function projectsPage() {
                 </p>
             </div>
 
-            <Project
-                title="Mon projet 1"
-                description="Description du projet."
-                imageSrc="/images/mon-projet.png"
-                githubUrl="https://github.com/mon-compte/mon-projet"
-                demoUrl="https://mon-projet.example.com"
-            />
-            
-            <Project
-                title="Mon projet 2"
-                description="Description du projet."
-                imageSrc="/images/mon-projet.png"
-                githubUrl="https://github.com/mon-compte/mon-projet"
-                demoUrl="https://mon-projet.example.com"
-            />
-            
-            <Project
-                title="Mon projet 3"
-                description="Description du projet."
-                imageSrc="/images/mon-projet.png"
-                githubUrl="https://github.com/mon-compte/mon-projet"
-                demoUrl="https://mon-projet.example.com"
-            />
-            
-            <Project
-                title="Mon projet 4"
-                description="Description du projet."
-                imageSrc="/images/mon-projet.png"
-                githubUrl="https://github.com/mon-compte/mon-projet"
-                demoUrl="https://mon-projet.example.com"
-            />
+            {projects.map((project: any) => (
+                <Project
+                    key={project.id}
+                    title={project.name}
+                    description={project.description || "Pas de description"}
+                    imageSrc="/images/placeholder.png"
+                    githubUrl={project.html_url}
+                    demoUrl={project.homepage || project.html_url}
+                />
+            ))}
 
             <Footer />
-        </main >
+        </main>
     );
 }

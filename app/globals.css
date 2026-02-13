@@ -105,6 +105,14 @@
   background-attachment: local;
 }
 
+.bg-cloud-2 {
+  background-image: linear-gradient(rgb(253, 247, 240, 0.5), rgba(253, 247, 240, 0.5)), url('/cloud2.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+
 .bg-blob {
   background-image: linear-gradient(rgb(253, 247, 240, 0.5), rgba(253, 247, 240, 0.5)), url('/blob.webp');
   background-size: contain;
