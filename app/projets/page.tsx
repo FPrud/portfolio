@@ -24,7 +24,7 @@ export default async function projectsPage() {
                             title={project.name}
                             created_at={project.fork && project.parent?.created_at ? project.parent.created_at : project.created_at}
                             description={project.description || "Pas de description"}
-                            imageSrc="/images/placeholder.png"
+                            imageSrc={`https://raw.githubusercontent.com/FPrud/${project.name}/main/thumbnail.png`}
                             githubUrl={project.html_url}
                             demoUrl={project.homepage || project.html_url}
                             isLeft={true}
@@ -38,7 +38,7 @@ export default async function projectsPage() {
                             title={project.name}
                             created_at={project.fork && project.parent?.created_at ? project.parent.created_at : project.created_at}
                             description={project.description || "Pas de description"}
-                            imageSrc="/images/placeholder.png"
+                            imageSrc={`https://raw.githubusercontent.com/FPrud/${project.name}/main/thumbnail.png`}
                             githubUrl={project.html_url}
                             demoUrl={project.homepage || project.html_url}
                             isLeft={false}
