@@ -9,19 +9,16 @@ export default function Home() {
         </p>
         <ul className="list-disc list-inside">
           <li>
-            Un CV réalisé directement en HTML et CSS avec Tailwind, car même si je suis capable d'utiliser Canva ou d'autres outils de design grand public, je trouve les langages de conception web plus précis et permettant une intégration plus souple.
+            Un CV réalisé directement en HTML et CSS avec Tailwind, car bien que je sois capable d'utiliser Canva ou d'autres outils de design grand public, je trouve la conception front-end plus précise, et permettant une intégration plus souple. Un bouton permet de télécharger le CV, en le convertissant en pdf. Une fonctionnalités qui me semble utile, car je peux mettre à jour le CV, tout en m'assurant que la dernière version reste en ligne.
           </li>
           <li>
-            Un bouton permettant de télécharger le CV, en le convertissant en pdf. Une fonctionnalités qui me semble utile, à la fois pour les employeurs dans la tech qui passeraient par là, mais aussi pour moi, car je peux le mettre à jour tout en m'assurant que la dernière version est en ligne.
-          </li>
-          <li>
-            En construction : la section Projets, qui me permettra de présenter les projets d'école individuels et collectifs, ainsi que les projets perso que j'ai pu développer sur mon temps libre.
+            La section Projets, qui me permet de présenter les projets d'école individuels et collectifs, ainsi que les projets perso que j'ai pu développer sur mon temps libre.
           </li>
           <li>
             En construction : le blog, qui me permettra de chroniquer mes actualités de développeur sur une autre plateforme que LinkedIn ou GitHub, qui ne me motivent pas toujours.
           </li>
           <li>
-            En construction : la section loisirs, dans laquelle je prévois d'exposer mes créations artistiques et inventions créatives. Par exemple, on y trouvera une sélection de photographies argentiques, développées et tirées manuellement, en amateur. Ou encore un ou deux liens de playlists, voire même de podcasts mixés à l'occasion. Ou tout autres projets vers lesquels l'inspiration me mènera.
+            En construction : la section loisirs, dans laquelle je prévois d'exposer mes créations artistiques et inventions créatives. Par exemple, on y trouvera une sélection de photographies argentiques, développées et tirées manuellement, en amateur. Ou encore quelques liens de playlists ou podcasts mixés à l'occasion. Ou tout autres projets vers lesquels l'inspiration me mènera.
           </li>
         </ul>
       </div>
