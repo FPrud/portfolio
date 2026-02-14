@@ -14,9 +14,9 @@ export default async function projectsPage() {
                 </p>
             </div>
             <div id="projects-container" className="relative flex flex-row items-start">
-                {/* Ligne centrale */}
-                <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-(--color-primary) -translate-x-1/2"></div>
-                
+
+                <div id="central-line" className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-(--color-primary) -translate-x-1/2"></div>
+
                 <div id="left-col" className="flex flex-col w-1/2 pr-5">
                     {projects.filter((_, index) => index % 2 === 0).map((project: any) => (
                         <Project

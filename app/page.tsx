@@ -3,13 +3,13 @@ export default function Home() {
     <main id="page entière" className="flex flex-col flex-1 p-5 bg-cloud overflow-auto">
       <div id="article" className="flex flex-col">
         <h1 id="title" className="text-center Horizon text-4xl">Félix<span className="HorizonOutlined font-black">Prudhomme</span></h1>
-        <h2 id="subtitle" className="text-center text-3xl pb-5">Développeur web full stack</h2>
+        <h2 id="subtitle" className="text-center text-3xl pb-5">Développeur full stack</h2>
         <p id="content" className="text-justify mb-5">
           Bonjour et bienvenue sur mon portfolio. Arrivé au terme de mon premier cycle de formation chez Ada Tech School, au campus de Paris, j'ai décidé de publier un portfolio afin d'en faire une vitrine pour présenter mes projets. Durant sa réalisation, j'ai pris conscience que j'avais envie que mon premier vrai site web soit plus qu'une simple galerie de projets. J'ai voulu faire de mon portfolio un projet à part entière. J'en ai profité pour faire une recherche esthétique, mais également de développer des fonctionnalités qui démontrent une envie de faire plus que le minimum. Vous trouverez par exemple :
         </p>
         <ul className="list-disc list-inside">
           <li>
-            Un CV réalisé directement en HTML et CSS avec Tailwind, car bien que je sois capable d'utiliser Canva ou d'autres outils de design grand public, je trouve la conception front-end plus précise, et permettant une intégration plus souple. Un bouton permet de télécharger le CV, en le convertissant en pdf. Une fonctionnalités qui me semble utile, car je peux mettre à jour le CV, tout en m'assurant que la dernière version reste en ligne.
+            Mon CV est réalisé directement en HTML et CSS avec Tailwind, car bien que je sois capable d'utiliser Canva ou d'autres outils de design grand public, je trouve la conception front-end plus précise et permettant une intégration plus souple. J'ai également intégré un bouton qui permet de télécharger le CV en le convertissant en pdf. Une fonctionnalités qui me semble utile, car je peux mettre à jour le CV, tout en m'assurant que la dernière version reste en ligne.
           </li>
           <li>
             La section Projets, qui me permet de présenter les projets d'école individuels et collectifs, ainsi que les projets perso que j'ai pu développer sur mon temps libre.

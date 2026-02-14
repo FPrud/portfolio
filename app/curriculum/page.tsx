@@ -33,21 +33,24 @@ export default function curriculumPage() {
   });
 
   return (
-    <main id="page entière" className="flex flex-1 flex-col  w-full p-5 overflow-auto">
-      <div id="article" className="flex flex-col">
-        <h1 id="title" className="text-center Horizon text-3xl pb-5">Curriculum</h1>
-        <p id="content" className="pb-5">Mon CV est réalisé en HTML + CSS avec Tailwind. Cliquez sur le bouton pour le convertir en PDF, en utilisant la fonction useReactToPrint. Cette page est volontairement non responsive, car je voulais dans un premier temps simuler le rapport de proportions d'une page A4, afin que mes éléments ne glissent pas. Une version consultable en ligne sur un appareil mobile est en cours de conception.</p>
-        <button
-          onClick={handleDownloadPDF}
-          className="mb-5 p-3 bg-(--color-accent) text-(--color-background) rounded-lg self-center cursor-pointer"
-        >
-          Télécharger en PDF
-        </button>
-        <p id="content" className="pb-5">Dans le menu de votre navigateur, choisissez la destination "Fichier PDF" pour conserver les liens cliquables et le texte sélectionnable.</p>
-        <div className="flex justify-center min-w-fit">
+    <main id="page entière" className="flex flex-1 flex-col w-full p-5 overflow-auto">
 
-          <Curriculum cvRef={cvRef} />
-        </div>
+      <div id="article" className="flex flex-col pb-15">
+        <h1 id="title" className="text-center Horizon text-3xl pb-5">Curriculum</h1>
+        <p id="content" className="flex flex-col gap-5">Mon CV est réalisé en HTML + CSS avec Tailwind. Cliquez sur le bouton pour le convertir en PDF, en utilisant la fonction useReactToPrint. Pour le télécharger, choisissez la destination "Fichier PDF" pour conserver les liens cliquables. Le numéro de téléphone n'est visible que sur la version PDF.
+
+          <button
+            onClick={handleDownloadPDF}
+            className="mb-5 p-3 bg-(--color-accent) text-(--color-background) rounded-lg self-center cursor-pointer"
+          >
+            Télécharger en PDF
+          </button>
+
+          Cette page est volontairement non responsive, car je voulais dans un premier temps simuler le rapport de proportions d'une page A4, afin que mes éléments ne glissent pas. Une version consultable en ligne sur un appareil mobile est en cours de conception.</p>
+      </div>
+
+      <div className="flex justify-center min-w-fit">
+        <Curriculum cvRef={cvRef} />
       </div>
       <Footer />
     </main >

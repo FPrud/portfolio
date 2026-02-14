@@ -8,34 +8,46 @@ export default function Curriculum({ cvRef }: CurriculumProps) {
     return (
         <div ref={cvRef} id="CV" className="flex flex-col justify-center w-260 aspect-[1/1.414] bg-(--color-background) p-15 shadow-2xl bg-blob">
 
-            <div id="title" className="flex flex-wrap justify-center border-b-3">
-                <h1 className="flex flex-wrap justify-center text-5xl break-all p-5">
+            <div id="title" className="flex flex-col justify-center items-center border-b-3 pb-3">
+                <h1 className="flex flex-wrap justify-center text-5xl break-all">
                     <span className="Horizon">Félix</span>
                     <span className="HorizonOutlined font-black">Prudhomme</span>
                 </h1>
+                <p>Développeur full stack en recherche d’alternance</p>
             </div>
 
             <div id="links" className="flex justify-between Intro items-center border-b-3 p-5">
 
                 <div id="col-1" className="flex flex-col w-1/3 text-left text-wrap">
-                    <Link href="https://felixprudhomme.website/" target="_blank">Felixprudhomme.website</Link>
-                    <Link href="https://github.com/FPrud" target="_blank">GitHub.com/fprud</Link>
-                    <Link href="https://www.linkedin.com/in/f%C3%A9lix-prudhomme-2767a6330/" target="_blank">Linkedin.com/fprud</Link>
+
+                    <h2>
+                        <Link href="https://github.com/FPrud" target="_blank">GitHub.com/fprud</Link>
+                    </h2>
+                    <h2>
+                        <Link href="https://www.linkedin.com/in/f%C3%A9lix-prudhomme-2767a6330/" target="_blank">Linkedin.com/fprud</Link>
+                    </h2>
+
                 </div>
 
-                <div id="col-2" className="flex flex-col w-1/3 text-3xl text-center">
-                    <h2>Paris</h2>
+                <div id="col-2" className="flex flex-col w-1/3 text-center text-wrap">
+                    <h2>
+                        <Link href="https://felixprudhomme.website/" target="_blank">Felixprudhomme.website</Link>
+                    </h2>
+                    <h2>Paris et environs</h2>
                 </div>
 
-                <div id="col-3" className="flex flex-col w-1/3 text-right">
-                    <Link href="mailto:felixprudhomme94@gmail.com">
-                        <h2 className="flex flex-wrap text-right justify-end">
-                            <span>felixprudhomme94</span>
-                            <span>@gmail.com</span>
-                        </h2>
-                    </Link>
-                    <h2>+33 6 17 21 47 27</h2>
+                <div id="col-3" className="flex flex-col w-1/3 text-right justify-end">
+
+                    <h2>
+                        <span className="print:hidden">+33 6 ## ## ## 27</span>
+                        <span className="hidden print:inline">+33 6 17 21 47 27</span>
+                    </h2>
+                    <h2>
+                        <Link href="mailto:felixprudhomme94@gmail.com">felixprudhomme94<br />@gmail.com</Link>
+                    </h2>
+
                 </div>
+
             </div>
 
             <div id="body" className="flex">
@@ -46,14 +58,10 @@ export default function Curriculum({ cvRef }: CurriculumProps) {
                         <div id="portrait" className="aspect-3/4 rounded-t-full overflow-hidden grayscale brightness-112 contrast-125 pb-3">
                             <img src="/portrait.webp" alt="Félix Prudhomme" className="w-full h-full object-cover" />
                         </div>
-                        <div id="jobSearch" className="pb-3 text-justify">
-                            <p className="Intro">
-                                Développeur fullstack en recherche d’alternance : 4j par semaine pendant 12 mois, à partir de mai 2026.
-                            </p>
-                        </div>
                         <div id="shortBio" className="text-justify">
                             <p className="Chocolates">
-                                Passionné et engagé, j’aime m'investir dans des projets qui ont du sens. Après une longue période de travail dans le secteur associatif, je me reconvertis dans la tech pour exploiter mon intérêt pour l’informatique, en privilégiant l’innovation et les initiatives à impact.
+                                <span className="font-extrabold">Développeur full stack en recherche d’alternance : 4j par semaine pendant 12 mois, à partir de mai 2026.</span><br />
+                                Passionné et engagé, j’aime m'investir dans des projets qui ont du sens. Après une longue période de travail dans le secteur associatif, je me reconvertis dans le développement informatique pour exploiter mon intérêt pour le code, en privilégiant l’innovation et les initiatives à impact.
                             </p>
                         </div>
                     </div>
