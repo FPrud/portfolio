@@ -6,10 +6,10 @@ export default async function projectsPage() {
     const projects = await getProjects();
 
     return (
-        <main id="page entière" className="flex flex-col flex-1 p-5 bg-cloud-2 overflow-auto">
+        <main id="page entière" className="flex flex-col flex-1 p-5 bg-cloud-2">
             <div id="article" className="flex flex-col">
-                <h1 id="title" className="text-center Horizon text-3xl pb-5">Projets</h1>
-                <p id="content" className="self-center pb-5">
+                <h1 id="title" className="text-center Horizon text-3xl mb-5">Projets</h1>
+                <p id="content" className="self-center text-justify mb-5">
 
                     Voici une sélection des projets d'école individuels et collectifs, ainsi que les projets personnels que j'ai pu développer sur mon temps libre. Les projets affichés ne sont pas rédigés en dur dans le code du site, il s'agit d'un appel à l'API de GitHub, ce qui facilite l'ajout de mes nouveaux projets. Les projets sont filtrés par date de création, du plus récent au plus ancien. J'essaye, dans la mesure du possible, de maintenir ces projets pour conserver leur trace le plus longtemps possible.
                 </p>
