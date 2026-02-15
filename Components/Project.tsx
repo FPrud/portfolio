@@ -8,6 +8,7 @@ type ProjectProps = {
     githubUrl: string;
     demoUrl: string;
     isLeft?: boolean;
+    isMobile?: boolean;
 };
 
 export default function Project({
@@ -18,6 +19,7 @@ export default function Project({
     githubUrl,
     demoUrl,
     isLeft,
+    isMobile = false,
 }: ProjectProps) {
 
     const formatDate = (dateString: string) => {
@@ -63,10 +65,16 @@ export default function Project({
                 <p id="project-description">{description}</p>
             </div>
 
-            {isLeft && (
+            {/* Junction pour mobile */}
+            {isMobile && (
+                <div id="junction-mobile" className="absolute top-1/2 -left-5.25 w-5.25 h-0.5 bg-(--color-primary)"></div>
+            )}
+
+            {/* Junctions pour desktop */}
+            {!isMobile && isLeft && (
                 <div id="junction-left" className="absolute top-1/2 -right-5.25 w-5.25 h-0.5 bg-(--color-primary)"></div>
             )}
-            {!isLeft && isLeft !== undefined && (
+            {!isMobile && !isLeft && isLeft !== undefined && (
                 <div id="junction-right" className="absolute top-1/2 -left-5.25 w-5.25 h-0.5 bg-(--color-primary)"></div>
             )}
         </div>

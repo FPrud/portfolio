@@ -13,11 +13,29 @@ export default async function projectsPage() {
                     Voici une sélection des projets que j'ai réalisé, ou auxquels j'ai participé. J'essaye, dans la mesure du possible, de déployer et maintenir ces projets pour conserver leur trace le plus longtemps possible. N'hésitez pas à y faire un tour et essayer les outils.
                 </p>
             </div>
-            <div id="projects-container" className="relative flex flex-row items-start">
+            <div id="projects-container" className="relative flex flex-col md:flex-row md:items-start">
 
-                <div id="central-line" className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-(--color-primary) -translate-x-1/2"></div>
+                <div id="central-line" className="absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-(--color-primary) md:-translate-x-1/2"></div>
 
-                <div id="left-col" className="flex flex-col w-1/2 pr-5">
+                {/* Version mobile/tablette : une seule colonne */}
+                <div id="mobile-col" className="flex flex-col w-full md:hidden pl-5">
+                    {projects.map((project: any) => (
+                        <Project
+                            key={project.id}
+                            title={project.name}
+                            created_at={project.fork && project.parent?.created_at ? project.parent.created_at : project.created_at}
+                            description={project.description || "Pas de description"}
+                            imageSrc={`https://raw.githubusercontent.com/FPrud/${project.name}/main/thumbnail.png`}
+                            githubUrl={project.html_url}
+                            demoUrl={project.homepage || project.html_url}
+                            isLeft={false}
+                            isMobile={true}
+                        />
+                    ))}
+                </div>
+
+                {/* Version desktop : deux colonnes */}
+                <div id="left-col" className="hidden md:flex flex-col w-1/2 pr-5">
                     {projects.filter((_, index) => index % 2 === 0).map((project: any) => (
                         <Project
                             key={project.id}
@@ -28,10 +46,11 @@ export default async function projectsPage() {
                             githubUrl={project.html_url}
                             demoUrl={project.homepage || project.html_url}
                             isLeft={true}
+                            isMobile={false}
                         />
                     ))}
                 </div>
-                <div id="right-col" className="flex flex-col w-1/2 pl-5">
+                <div id="right-col" className="hidden md:flex flex-col w-1/2 pl-5">
                     {projects.filter((_, index) => index % 2 !== 0).map((project: any) => (
                         <Project
                             key={project.id}
@@ -42,6 +61,7 @@ export default async function projectsPage() {
                             githubUrl={project.html_url}
                             demoUrl={project.homepage || project.html_url}
                             isLeft={false}
+                            isMobile={false}
                         />
                     ))}
                 </div>
