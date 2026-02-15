@@ -37,7 +37,7 @@ export default function curriculumPage() {
 
       <div id="article" className="flex flex-col pb-15">
         <h1 id="title" className="text-center Horizon text-3xl pb-5">Curriculum</h1>
-        <p id="content" className="flex flex-col gap-5">Mon CV est réalisé en HTML + CSS avec Tailwind. Cliquez sur le bouton pour le convertir en PDF, en utilisant la fonction useReactToPrint. Pour le télécharger, choisissez la destination "Fichier PDF" pour conserver les liens cliquables. Le numéro de téléphone n'est visible que sur la version PDF.
+        <p id="content" className="flex flex-col gap-5">Mon CV est réalisé en HTML et CSS avec Tailwind. Cliquez sur le bouton pour le convertir en PDF, en utilisant la fonction useReactToPrint. Pour le télécharger, choisissez la destination "Fichier PDF" pour conserver les liens cliquables. Le numéro de téléphone n'est visible que sur la version PDF.
 
           <button
             onClick={handleDownloadPDF}
@@ -46,7 +46,7 @@ export default function curriculumPage() {
             Télécharger en PDF
           </button>
 
-          Cette page est volontairement non responsive, car je voulais dans un premier temps simuler le rapport de proportions d'une page A4, afin que mes éléments ne glissent pas. Une version consultable en ligne sur un appareil mobile est en cours de conception.</p>
+          Cette page est pour l'instant non responsive, car je voulais dans un premier temps simuler le rapport de proportions d'une page A4, afin que mes éléments ne glissent pas. je travaille à la conception d'une version mobile.</p>
       </div>
 
       <div className="flex justify-center min-w-fit">

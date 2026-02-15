@@ -33,7 +33,7 @@ export default function Curriculum({ cvRef }: CurriculumProps) {
                     <h2>
                         <Link href="https://felixprudhomme.website/" target="_blank">Felixprudhomme.website</Link>
                     </h2>
-                    <h2>Paris et environs</h2>
+                    <h2>Paris et ses environs</h2>
                 </div>
 
                 <div id="col-3" className="flex flex-col w-1/3 text-right justify-end">
