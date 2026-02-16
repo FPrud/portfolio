@@ -6,7 +6,7 @@ interface CurriculumProps {
 
 export default function Curriculum({ cvRef }: CurriculumProps) {
     return (
-        <div ref={cvRef} id="CV" className="flex flex-col justify-center w-260 aspect-[1/1.414] bg-(--color-background) p-15 shadow-2xl bg-blob border-2">
+        <div ref={cvRef} id="CV" className="flex flex-col justify-center w-260 aspect-[1/1.414] bg-(--color-background) p-15 bg-blob border-2">
 
             <div id="title" className="flex flex-col justify-center items-center border-b-3 pb-3">
                 <h1 className="flex flex-wrap justify-center text-5xl break-all">
