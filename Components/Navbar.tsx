@@ -27,12 +27,12 @@ export const Navbar = () => {
 
     const getLinkClassName = (href: string) => {
         const isActive = pathname === href;
-        return `px-5 py-2 border-l-2 ${isActive ? 'bg-[var(--color-primary)] text-[var(--color-background)]' : ''}`;
+        return `px-5 py-2 border-l-2 border-(--color-primary) ${isActive ? 'bg-(--color-primary) text-(--color-background)' : ''}`;
     };
 
     return (
         <div id="navBar" className="flex border-b-2 overflow-auto text-xl">
-            <Link href="/" className={`px-5 py-2 ${pathname === '/' ? 'bg-[var(--color-primary)] text-[var(--color-background)]' : ''}`}>
+            <Link href="/" className={`px-5 py-2 ${pathname === '/' ? 'bg-(--color-primary) text-(--color-background)' : ''}`}>
                 <h3>
                     <span className="Horizon">Félix</span>
                     <span className="HorizonOutlined font-black">Prudhomme</span>
@@ -46,12 +46,13 @@ export const Navbar = () => {
                 <h3 className="Horizon">Projets</h3>
             </Link>
 
-            <div className="px-5 py-2 border-l-2 cursor-not-allowed">
+            <Link href="/blog" className={getLinkClassName('/blog')}>
                 <h3 className="Horizon">Blog</h3>
-            </div>
-            <div className="px-5 py-2 border-l-2 cursor-not-allowed">
-                <h3 className="Horizon">Loisirs</h3>
-            </div>
+            </Link>
+
+            <Link href="/hobbies" className={getLinkClassName('/hobbies')}>
+                <h3 className="Horizon">Hobbies</h3>
+            </Link>
 
         </div>
     );

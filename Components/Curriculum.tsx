@@ -6,7 +6,7 @@ interface CurriculumProps {
 
 export default function Curriculum({ cvRef }: CurriculumProps) {
     return (
-        <div ref={cvRef} id="CV" className="flex flex-col justify-center w-260 aspect-[1/1.414] bg-(--color-background) p-15 shadow-2xl bg-blob">
+        <div ref={cvRef} id="CV" className="flex flex-col justify-center w-260 aspect-[1/1.414] bg-(--color-background) p-15 shadow-2xl bg-blob border-2">
 
             <div id="title" className="flex flex-col justify-center items-center border-b-3 pb-3">
                 <h1 className="flex flex-wrap justify-center text-5xl break-all">
@@ -60,7 +60,7 @@ export default function Curriculum({ cvRef }: CurriculumProps) {
                         </div>
                         <div id="shortBio" className="text-justify">
                             <p className="Chocolates">
-                                <span className="font-extrabold">Développeur full stack en recherche d’alternance : 4j par semaine pendant 12 mois, à partir de mai 2026.</span><br />
+                                <span className="Intro">Développeur full stack en recherche d’alternance : 4j par semaine pendant 12 mois, à partir de mai 2026.</span><br />
                                 Passionné et engagé, j’aime m'investir dans des projets qui ont du sens. Après une longue période de travail dans le secteur associatif, je me reconvertis dans le développement informatique pour exploiter mon intérêt pour le code, en privilégiant l’innovation et les initiatives à impact.
                             </p>
                         </div>
@@ -130,7 +130,7 @@ export default function Curriculum({ cvRef }: CurriculumProps) {
                         </h2>
                         <div id="2-columns" className="flex flex-row gap-5 pb-5">
                             <div id="col-1" className="flex flex-col w-1/2">
-                                <Link href="https://cineducoinadatechschool.vercel.app/" target="_blank"><h3 className="ChocolatesBold">Collab'</h3></Link>
+                                <Link href="https://github.com/FPrud/collab-1.0" target="_blank"><h3 className="ChocolatesBold">Collab'</h3></Link>
                                 <p className="Chocolates text-justify">
                                     Paris, 2026
                                     <br />Une application d’annonces permettant aux musiciens amateurs de se constituer un réseau. Rechercher des musiciens avec qui collaborer, ou former un groupe.
@@ -142,14 +142,14 @@ export default function Curriculum({ cvRef }: CurriculumProps) {
                             </div>
 
                             <div id="col-2" className="flex flex-col w-1/2">
-                                <Link href="https://cineducoinadatechschool.vercel.app/" target="_blank"><h3 className="ChocolatesBold">CinéDuCoin</h3></Link>
+                                <Link href="https://github.com/FPrud/CineDuCoin" target="_blank"><h3 className="ChocolatesBold">CinéDuCoin</h3></Link>
                                 <p className="Chocolates text-justify">
                                     Paris, 2025
                                     <br />Une application permettant de trouver tous les cinémas se trouvant aux alentours, avec une recherche par adresse et un paramètre ajustable de distance.
                                     <br /><span className="ChocolatesBold">Features :</span> Fetch de deux API en chaîne, autocomplétion de recherche, calcul de distance par coordonnées géolocalisées.
                                     <br /><span className="ChocolatesBold">Stack :</span> HTML, CSS, Javascript
-                                    <br /><Link href="https://github.com/FPrud/collab-1.0" target="_blank" className="ChocolatesBold">Voir le projet sur GitHub</Link>
-                                    <br /><Link href="https://collab-1-0.vercel.app/" target="_blank" className="ChocolatesBold">Voir le projet déployé</Link>
+                                    <br /><Link href="https://github.com/FPrud/CineDuCoin" target="_blank" className="ChocolatesBold">Voir le projet sur GitHub</Link>
+                                    <br /><Link href="https://cineducoinadatechschool.vercel.app/" target="_blank" className="ChocolatesBold">Voir le projet déployé</Link>
                                 </p>
                             </div>
                         </div>
