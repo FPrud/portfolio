@@ -14,7 +14,7 @@ export default function Home() {
         </p>
         <ul className="list-disc list-inside">
           <li>
-            Mon CV, qui est réalisé en HTML et CSS avec Tailwind. J'ai intégré un bouton qui permet de télécharger le CV en le convertissant en pdf. Une fonctionnalités utile car elle me permet de partager facilement la dernière version.
+            Mon CV, qui est réalisé en HTML et CSS avec Tailwind. J'ai intégré un bouton qui permet de télécharger le CV en le convertissant en pdf. Une fonctionnalité utile car elle me permet de partager facilement la dernière version.
           </li>
           <li>
             La section Projets, qui me permet de présenter les projets d'école individuels et collectifs, ainsi que les projets personnels que j'ai pu développer sur mon temps libre.
