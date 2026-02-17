@@ -130,14 +130,14 @@ export default function Curriculum({ cvRef }: CurriculumProps) {
                         </h2>
                         <div id="2-columns" className="flex flex-row gap-5 pb-5">
                             <div id="col-1" className="flex flex-col w-1/2">
-                                <Link href="https://github.com/FPrud/collab-1.0" target="_blank"><h3 className="ChocolatesBold">Collab'</h3></Link>
+                                <Link href="https://github.com/FPrud/Collab" target="_blank"><h3 className="ChocolatesBold">Collab'</h3></Link>
                                 <p className="Chocolates text-justify">
                                     Paris, 2026
                                     <br />Une application d’annonces permettant aux musiciens amateurs de se constituer un réseau. Rechercher des musiciens avec qui collaborer, ou former un groupe.
                                     <br /><span className="ChocolatesBold">Features :</span> Création d'une carte de visite, publication d’annonces et de commentaires, recherche par mots-clés, panneaux d’administration.
                                     <br /><span className="ChocolatesBold">Stack :</span> TypeScript, Next.js, ORM, Neon, BetterAuth, Tailwind
-                                    <br /><Link href="https://github.com/FPrud/collab-1.0" target="_blank" className="ChocolatesBold">Voir le projet sur GitHub</Link>
-                                    <br /><Link href="https://collab-1-0.vercel.app/" target="_blank" className="ChocolatesBold">Voir le projet déployé</Link>
+                                    <br /><Link href="https://github.com/FPrud/Collab" target="_blank" className="ChocolatesBold">Voir le projet sur GitHub</Link>
+                                    <br /><Link href="https://collab-two-tau.vercel.app//" target="_blank" className="ChocolatesBold">Voir le projet déployé</Link>
                                 </p>
                             </div>
 
