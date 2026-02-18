@@ -84,7 +84,7 @@ export default function curriculumPage() {
 
       <div id="article" className="flex flex-col pb-5">
         <h1 id="title" className="text-center Horizon text-3xl pb-5">Curriculum</h1>
-        <p id="content" className="flex flex-col gap-5 self-center text-justify max-w-4xl">
+        <p id="content" className="flex flex-col gap-5 self-center text-justify">
           Mon CV est réalisé en HTML et CSS avec Tailwind. Cliquez sur le bouton pour le convertir en PDF, en utilisant la fonction useReactToPrint. Pour le télécharger, choisissez la destination "Fichier PDF" pour conserver les liens cliquables.
 
           <button
