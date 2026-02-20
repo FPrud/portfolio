@@ -45,8 +45,6 @@ export async function getProjects() {
             return new Date(dateB).getTime() - new Date(dateA).getTime();
         });
 
-        console.log("Projets récupérés:", sortedRepos);
-
         return sortedRepos;
     } catch (error) {
         console.error("Erreur lors de la récupération des projets:", error);

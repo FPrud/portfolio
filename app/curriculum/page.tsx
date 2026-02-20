@@ -1,7 +1,7 @@
 "use client";
 
-import Curriculum from "@/Components/Curriculum";
-import Footer from "@/Components/Footer";
+import Curriculum from "@/components/Curriculum";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 import { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
