@@ -24,7 +24,7 @@ export default function Project({
 }: ProjectProps) {
 
     return (
-        <div id="project-card" className="relative border-2 mb-5 p-5 bg-(--color-background) rounded-md">
+        <div id="project-card" className="relative border-2 mb-5 p-5 bg-(--color-background) rounded-md last:mb-0">
 
             <div id="project-image-links">
                 <div id="project-image-container" className="w-48 h-32 shrink-0 mr-3 mb-3 overflow-hidden rounded border float-start">
@@ -40,7 +40,7 @@ export default function Project({
             </div>
 
 
-            <div id="project-presentation" className="">
+            <div id="project-presentation">
 
                 <h2 id="project-title" className="Horizon text-xl">
                     <Link id="github-link" href={githubUrl} target="_blank">{title}</Link>
@@ -58,12 +58,12 @@ export default function Project({
                 <p id="project-description">{description}</p>
             </div>
 
-            {/* Junction pour mobile */}
+            {/* Mobile junction */}
             {isMobile && (
                 <div id="junction-line" className="absolute top-1/2 -left-5.25 w-5.25 h-0.5 bg-(--color-primary)"></div>
             )}
 
-            {/* Junctions pour desktop */}
+            {/* Desktop junctions */}
             {!isMobile && isLeft && (
                 <div id="junction-line-left" className="absolute top-1/2 -right-5.25 w-5.25 h-0.5 bg-(--color-primary)"></div>
             )}

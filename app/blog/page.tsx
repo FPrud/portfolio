@@ -19,11 +19,11 @@ export default async function blogPage() {
 
                 <div id="vertical-line" className="absolute left-0 top-0 bottom-0 w-0.5 bg-(--color-primary)"></div>
 
-                <article id="posts-col" className="flex flex-col pl-5">
+                <div id="posts-col" className="flex flex-col pl-5">
                     {posts.map((blogPost) => (
                         <div
                             key={blogPost.id}
-                            className="mb-8 relative"
+                            className="mb-5 relative last:mb-0"
                         >
                             <div id="junction-line" className="absolute left-0 top-1/2 w-5 h-0.5 bg-(--color-primary) -translate-y-1/2 -translate-x-5"></div>
 
@@ -45,7 +45,7 @@ export default async function blogPage() {
                             </article>
                         </div>
                     ))}
-                </article>
+                </div>
             </div>
             <Footer />
         </main>
