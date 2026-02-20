@@ -7,16 +7,16 @@ export default async function projectsPage() {
 
     return (
         <main id="page entière" className="flex flex-col flex-1 p-5 bg-cloud-2">
-            <div id="article" className="flex flex-col">
+            <article id="article" className="flex flex-col">
                 <h1 id="title" className="text-center Horizon text-3xl mb-5">Projets</h1>
                 <p id="content" className="self-center text-justify mb-5">
 
                     Voici une sélection des projets d'école individuels et collectifs, ainsi que les projets personnels que j'ai pu développer sur mon temps libre. Les projets affichés ne sont pas rédigés en dur dans le code du site, il s'agit d'un appel à l'API de GitHub, ce qui facilite l'ajout de mes nouveaux projets. Les projets sont filtrés par date de création, du plus récent au plus ancien. J'essaye, dans la mesure du possible, de maintenir ces projets pour conserver leur trace le plus longtemps possible.
                 </p>
-            </div>
+            </article>
             <div id="projects-container" className="relative flex flex-col md:flex-row md:items-start">
 
-                <div id="central-line" className="absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-(--color-primary) md:-translate-x-1/2"></div>
+                <div id="vertical-line" className="absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-(--color-primary) md:-translate-x-1/2"></div>
 
                 {/* Version mobile/tablette : une seule colonne */}
                 <div id="mobile-col" className="flex flex-col w-full md:hidden pl-5">

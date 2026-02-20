@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main id="page entière" className="flex flex-col flex-1 p-5 bg-cloud">
-      <div id="article" className="flex flex-col">
+      <article id="article" className="flex flex-col">
         <h1 id="title" className="text-center Horizon text-4xl break-all">
           Félix
           <span className="HorizonOutlined font-black">
@@ -20,13 +20,13 @@ export default function Home() {
             La section Projets, qui me permet de présenter les projets d'école individuels et collectifs, ainsi que les projets personnels que j'ai pu développer sur mon temps libre.
           </li>
           <li>
-            En construction : le blog, qui me permettra de chroniquer mes actualités de développeur sur une autre plateforme que LinkedIn ou GitHub, qui ne me motivent pas toujours.
+            En construction : le blog, qui me permettra de chroniquer mes actualités de développeur sur une autre plateforme que LinkedIn ou GitHub.
           </li>
           <li>
             En construction : la section loisirs, dans laquelle je prévois d'exposer mes créations. On y trouvera une sélection de photographies argentiques, développées et tirées manuellement. Ou encore les liens de mes playlists et podcasts mixés. Ou tout autres projets vers lesquels l'inspiration me mènera.
           </li>
         </ul>
-      </div>
+      </article>
       <img src="/star.svg" alt="déco étoile" className="h-20 mt-5 self-center" />
     </main >
   );

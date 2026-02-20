@@ -1,3 +1,4 @@
+import { formatDate } from "@/actions/formatDate";
 import Footer from "@/components/Footer";
 import { db } from "@/src/db";
 import { blogPosts } from "@/src/schema";
@@ -33,13 +34,9 @@ export default async function BlogPost({
         return (
             <main id="page entière" className="flex flex-col flex-1 p-5 bg-cloud overflow-auto">
                 <article id="article" className="flex flex-col">
-                    <h1 id="title" className="text-center Horizon text-3xl">{blogPost.title}</h1>
-                    <time className="text-gray-600 mb-5 block text-center">
-                        {new Date(blogPost.createdAt).toLocaleDateString('fr-FR', {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric'
-                        })}
+                    <h1 id="title" className="Horizon text-3xl">{blogPost.title}</h1>
+                    <time className="text-gray-600 mb-5 block">
+                        {formatDate(blogPost.createdAt.toISOString())}
                     </time>
                     <p id="content" className="self-center text-justify pb-5">
                         {blogPost.content}

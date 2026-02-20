@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { formatDate } from "@/actions/formatDate";
 
 type ProjectProps = {
     title: string;
@@ -22,14 +23,6 @@ export default function Project({
     isMobile = false,
 }: ProjectProps) {
 
-    const formatDate = (dateString: string) => {
-        const date = new Date(dateString);
-        const day = String(date.getDate()).padStart(2, '0');
-        const month = String(date.getMonth() + 1).padStart(2, '0');
-        const year = date.getFullYear();
-        return `${day}/${month}/${year}`;
-    };
-
     return (
         <div id="project-card" className="relative border-2 mb-5 p-5 bg-(--color-background) rounded-md">
 
@@ -52,7 +45,7 @@ export default function Project({
                 <h2 id="project-title" className="Horizon text-xl">
                     <Link id="github-link" href={githubUrl} target="_blank">{title}</Link>
                 </h2>
-                <p id="created_at">{formatDate(created_at)}</p>
+                <p id="created_at" className="text-gray-600">{formatDate(created_at)}</p>
                 <div id="links" className="flex gap-5">
                     <Link id="github-link" href={githubUrl} target="_blank" className="font-bold">
                         GitHub
@@ -67,15 +60,15 @@ export default function Project({
 
             {/* Junction pour mobile */}
             {isMobile && (
-                <div id="junction-mobile" className="absolute top-1/2 -left-5.25 w-5.25 h-0.5 bg-(--color-primary)"></div>
+                <div id="junction-line" className="absolute top-1/2 -left-5.25 w-5.25 h-0.5 bg-(--color-primary)"></div>
             )}
 
             {/* Junctions pour desktop */}
             {!isMobile && isLeft && (
-                <div id="junction-left" className="absolute top-1/2 -right-5.25 w-5.25 h-0.5 bg-(--color-primary)"></div>
+                <div id="junction-line-left" className="absolute top-1/2 -right-5.25 w-5.25 h-0.5 bg-(--color-primary)"></div>
             )}
             {!isMobile && !isLeft && isLeft !== undefined && (
-                <div id="junction-right" className="absolute top-1/2 -left-5.25 w-5.25 h-0.5 bg-(--color-primary)"></div>
+                <div id="junction-line-right" className="absolute top-1/2 -left-5.25 w-5.25 h-0.5 bg-(--color-primary)"></div>
             )}
         </div>
     );
