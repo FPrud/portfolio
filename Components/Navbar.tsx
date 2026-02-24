@@ -26,7 +26,9 @@ export const Navbar = () => {
     }, []);
 
     const getLinkClassName = (href: string) => {
-        const isActive = pathname.startsWith(href);
+        const isActive = href === '/'
+            ? pathname === '/'
+            : pathname.startsWith(href);
         return `px-5 py-2 border-l-2 border-(--color-primary) ${isActive ? 'bg-(--color-primary) text-(--color-background)' : ''}`;
     };
 
