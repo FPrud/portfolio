@@ -1,6 +1,6 @@
-import Footer from "@/components/Footer";
-import Project from "@/components/Project";
-import { getProjects } from "@/actions/getProjects";
+import Footer from "@/Components/Footer";
+import Project from "@/Components/Project";
+import { getProjects } from "@/Actions/getProjects";
 
 export default async function projectsPage() {
     const projects = await getProjects();

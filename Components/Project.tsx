@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { formatDate } from "@/actions/formatDate";
+import { formatDate } from "@/Actions/formatDate";
 
 type ProjectProps = {
     title: string;

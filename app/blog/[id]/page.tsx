@@ -1,6 +1,6 @@
-import { formatDate } from "@/actions/formatDate";
-import { getBlogPostById, getNextBlogPost, getPreviousBlogPost } from "@/actions/getBlogPosts";
-import Footer from "@/components/Footer";
+import { formatDate } from "@/Actions/formatDate";
+import { getBlogPostById, getNextBlogPost, getPreviousBlogPost } from "@/Actions/getBlogPosts";
+import Footer from "@/Components/Footer";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Markdown from "react-markdown";

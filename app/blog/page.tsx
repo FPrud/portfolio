@@ -1,8 +1,8 @@
 "use client";
 
-import { formatDate } from "@/actions/formatDate";
-import { getBlogPosts } from "@/actions/getBlogPosts";
-import Footer from "@/components/Footer";
+import { formatDate } from "@/Actions/formatDate";
+import { getBlogPosts } from "@/Actions/getBlogPosts";
+import Footer from "@/Components/Footer";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
