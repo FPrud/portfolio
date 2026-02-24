@@ -120,3 +120,11 @@
   background-repeat: no-repeat;
   background-attachment: local;
 }
+
+.button {
+  padding: calc(var(--spacing) * 3);
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+}

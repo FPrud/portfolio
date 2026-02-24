@@ -1,0 +1,140 @@
+{
+  "id": "93c1d1b1-501a-4214-9984-726e9dfdbe22",
+  "prevId": "ddc00438-b438-4b40-8679-73c07ea055f3",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.blogposts": {
+      "name": "blogposts",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "title": {
+          "name": "title",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "content": {
+          "name": "content",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.blogPostsTags": {
+      "name": "blogPostsTags",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "blogPost_Id": {
+          "name": "blogPost_Id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tag_Id": {
+          "name": "tag_Id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "blogPostsTags_blogPost_Id_blogposts_id_fk": {
+          "name": "blogPostsTags_blogPost_Id_blogposts_id_fk",
+          "tableFrom": "blogPostsTags",
+          "tableTo": "blogposts",
+          "columnsFrom": [
+            "blogPost_Id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "blogPostsTags_tag_Id_tags_id_fk": {
+          "name": "blogPostsTags_tag_Id_tags_id_fk",
+          "tableFrom": "blogPostsTags",
+          "tableTo": "tags",
+          "columnsFrom": [
+            "tag_Id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.tags": {
+      "name": "tags",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "tag": {
+          "name": "tag",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

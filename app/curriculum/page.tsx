@@ -89,7 +89,7 @@ export default function curriculumPage() {
 
           <button
             onClick={handleDownloadPDF}
-            className="mb-5 p-3 bg-(--color-accent) text-(--color-background) rounded-lg self-center cursor-pointer"
+            className="mb-5 button self-center"
           >
             Télécharger en PDF
           </button>

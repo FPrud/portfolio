@@ -1,21 +1,37 @@
-import { formatDate } from "@/actions/formatDate";
-import Footer from "@/components/Footer";
-import { db } from "@/src/db";
-import { blogPosts } from "@/src/schema";
-import { desc } from "drizzle-orm";
-import Link from "next/link";
+"use client";
 
-export default async function blogPage() {
-    // Récupérer les 5 posts les plus récents
-    const posts = await db
-        .select()
-        .from(blogPosts)
-        .orderBy(desc(blogPosts.id))
-        .limit(5);
+import { formatDate } from "@/actions/formatDate";
+import { getBlogPosts } from "@/actions/getBlogPosts";
+import Footer from "@/components/Footer";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
+export default function blogPage() {
+    const [posts, setPosts] = useState<any[]>([]);
+    const [offset, setOffset] = useState(0);
+    const [hasMore, setHasMore] = useState(true);
+
+    useEffect(() => {
+        loadInitialPosts();
+    }, []);
+
+    const loadInitialPosts = async () => {
+        const initialPosts = await getBlogPosts(5, 0);
+        setPosts(initialPosts);
+        setOffset(5);
+        setHasMore(initialPosts.length === 5);
+    };
+
+    const loadMorePosts = async () => {
+        const newPosts = await getBlogPosts(5, offset);
+        setPosts([...posts, ...newPosts]);
+        setOffset(offset + 5);
+        setHasMore(newPosts.length === 5);
+    };
 
     return (
         <main id="page entière" className="flex flex-col flex-1 p-5 bg-cloud overflow-auto">
-            <div id="blog-container" className="relative flex flex-col">
+            <div id="blog-container" className="relative flex flex-col mb-5">
 
                 <div id="vertical-line" className="absolute left-0 top-0 bottom-0 w-0.5 bg-(--color-primary)"></div>
 
@@ -39,7 +55,7 @@ export default async function blogPage() {
                                         {formatDate(blogPost.createdAt.toISOString())}
                                     </time>
                                 </Link>
-                                <p id="content" className="self-center text-justify pb-5">
+                                <p id="content" className="self-center text-justify pb-5 whitespace-pre-wrap">
                                     {blogPost.content}
                                 </p>
                             </article>
@@ -47,6 +63,14 @@ export default async function blogPage() {
                     ))}
                 </div>
             </div>
+            {hasMore && (
+                <button
+                    onClick={loadMorePosts}
+                    className="button self-center"
+                >
+                    Voir plus
+                </button>
+            )}
             <Footer />
         </main>
     );
