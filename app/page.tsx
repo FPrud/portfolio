@@ -20,10 +20,10 @@ export default function Home() {
             La section Projets, qui me permet de présenter les projets d'école individuels et collectifs, ainsi que les projets personnels que j'ai pu développer sur mon temps libre.
           </li>
           <li>
-            En construction : le blog, qui me permettra de chroniquer mes actualités de développeur sur une autre plateforme que LinkedIn ou GitHub.
+            Le blog, qui me permet de chroniquer mes actualités de développeur, partager mes points de vues personnels et poser des mots sur les concepts que j'apprends au fur et à mesure.
           </li>
           <li>
-            En construction : la section loisirs, dans laquelle je prévois d'exposer mes créations. On y trouvera une sélection de photographies argentiques, développées et tirées manuellement. Ou encore les liens de mes playlists et podcasts mixés. Ou tout autres projets vers lesquels l'inspiration me mènera.
+            En construction : la section loisirs, dans laquelle je prévois d'exposer des créations. On y trouvera une sélection de photographies argentiques, développées et tirées manuellement. Ou encore les liens de mes playlists et podcasts mixés. Ou tout autres projets vers lesquels l'inspiration me mènera.
           </li>
         </ul>
       </article>
