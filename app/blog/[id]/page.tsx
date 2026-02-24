@@ -3,6 +3,7 @@ import { getBlogPostById, getNextBlogPost, getPreviousBlogPost } from "@/actions
 import Footer from "@/components/Footer";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Markdown from "react-markdown";
 
 export default async function BlogPost({
     params
@@ -32,9 +33,9 @@ export default async function BlogPost({
                 <time className="text-gray-600 mb-5 block">
                     {formatDate(blogPost.createdAt.toISOString())}
                 </time>
-                <p id="content" className="self-center text-justify whitespace-pre-wrap">
-                    {blogPost.content}
-                </p>
+                <div id="content" className="self-center text-justify whitespace-pre-wrap">
+                    <Markdown>{blogPost.content}</Markdown>
+                </div>
             </article>
 
             <div id="page-navigation" className="flex justify-between">

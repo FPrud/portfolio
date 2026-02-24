@@ -5,6 +5,7 @@ import { getBlogPosts } from "@/actions/getBlogPosts";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Markdown from "react-markdown";
 
 export default function blogPage() {
     const [posts, setPosts] = useState<any[]>([]);
@@ -55,9 +56,11 @@ export default function blogPage() {
                                         {formatDate(blogPost.createdAt.toISOString())}
                                     </time>
                                 </Link>
-                                <p id="content" className="self-center text-justify pb-5 whitespace-pre-wrap">
-                                    {blogPost.content}
-                                </p>
+                                <div id="content" className="self-center text-justify pb-5 whitespace-pre-wrap">
+                                    <Markdown>
+                                        {blogPost.content}
+                                    </Markdown>
+                                </div>
                             </article>
                         </div>
                     ))}
