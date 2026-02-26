@@ -100,7 +100,7 @@
 .bg-cloud {
   background-image: linear-gradient(rgb(253, 247, 240, 0.5), rgba(253, 247, 240, 0.5)), url('/cloud.webp');
   background-size: contain;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: local;
 }
