@@ -20,7 +20,6 @@ export default function blogPage() {
 
     const loadInitialPosts = async () => {
         setLoading(true);
-
         try {
             const initialPosts = await getBlogPosts(5, 0);
             setPosts(initialPosts);
@@ -41,7 +40,7 @@ export default function blogPage() {
     return (
         <div id="page entière" className="flex flex-col flex-1 p-5 overflow-auto">
             <div id="blog-container" className="relative flex flex-col mb-5">
-                <div id="vertical-line" className="absolute left-0 top-0 bottom-0 w-0.5 bg-(--color-primary)"></div>
+                <div id="vertical-line" className="absolute left-0 top-0 bottom-0 w-0.5 bg-(--color-primary)"/>
 
                 <div id="posts-col" className="flex flex-col pl-5">
                     {loading ? (
@@ -63,7 +62,7 @@ export default function blogPage() {
                                     className="absolute left-0 top-1/2 w-5 h-0.5 bg-(--color-primary) -translate-y-1/2 -translate-x-5"
                                 />
 
-                                <article id="article" className="flex flex-col border-2 p-5 bg-(--color-background) rounded-md truncate">
+                                <article id="article" className="flex flex-col border-2 p-5 bg-(--color-background) rounded-md">
                                     <h1 id="title" className="Horizon text-3xl">
                                         <Link href={`/blog/${blogPost.id}`}>{blogPost.title}</Link>
                                     </h1>

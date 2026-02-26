@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col antialiased bg-(--color-background) h-screen w-screen overflow-hidden">
+      <body className="flex flex-col antialiased bg-(--color-background) h-screen overflow-hidden">
         <div className="flex flex-col flex-1 overflow-hidden">
           <header>
             <Navbar />
