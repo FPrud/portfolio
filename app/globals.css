@@ -98,7 +98,7 @@
 }
 
 .bg-cloud {
-  background-image: linear-gradient(rgb(253, 247, 240, 0.33), rgba(253, 247, 240, 0.5)), url('/cloud.webp');
+  background-image: linear-gradient(rgb(253, 247, 240, 0.5), rgba(253, 247, 240, 0.5)), url('/cloud.webp');
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;

@@ -39,7 +39,7 @@ export default function blogPage() {
     };
 
     return (
-        <div id="page entière" className="flex flex-col flex-1 p-5 bg-cloud-3 overflow-auto">
+        <div id="page entière" className="flex flex-col flex-1 p-5 overflow-auto">
             <div id="blog-container" className="relative flex flex-col mb-5">
                 <div id="vertical-line" className="absolute left-0 top-0 bottom-0 w-0.5 bg-(--color-primary)"></div>
 
