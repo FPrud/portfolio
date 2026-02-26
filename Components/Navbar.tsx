@@ -29,17 +29,18 @@ export const Navbar = () => {
         const isActive = href === '/'
             ? pathname === '/'
             : pathname.startsWith(href);
-        return `px-5 py-2 border-l-2 border-(--color-primary) ${isActive ? 'bg-(--color-primary) text-(--color-background)' : ''}`;
+        return `px-5 py-2 border-l-2 border-(--color-primary) z-10 h-12 ${isActive ? 'bg-(--color-primary) text-(--color-background)' : ''}`;
     };
 
     return (
-        <div id="navBar" className="flex border-b-2 overflow-auto text-xl">
-            <Link href="/" className={`px-5 py-2 ${pathname === '/' ? 'bg-(--color-primary) text-(--color-background)' : ''}`}>
+        <nav id="navBar" className="flex border-b-2 overflow-auto text-xl w-full fixed top-0 bg-(--color-background) z-10 h-12">
+            <Link href="/" className={`px-5 py-2 ${pathname === '/' ? 'bg-(--color-primary) text-(--color-background) h-12' : ''}`}>
                 <h3>
                     <span className="Horizon">Félix</span>
                     <span className="HorizonOutlined font-black">Prudhomme</span>
                 </h3>
             </Link>
+
             <Link href="/curriculum" className={getLinkClassName('/curriculum')}>
                 <h3 className="Horizon">Curriculum</h3>
             </Link>
@@ -56,6 +57,6 @@ export const Navbar = () => {
                 <h3 className="Horizon">Hobbies</h3>
             </Link>
 
-        </div>
+        </nav>
     );
 };

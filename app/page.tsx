@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main id="page entière" className="flex flex-col flex-1 p-5 bg-cloud">
+    <div id="page entière" className="flex flex-col flex-1 bg-cloud">
       <article id="article" className="flex flex-col">
         <h1 id="title" className="text-center Horizon text-4xl break-all">
           Félix
@@ -27,7 +27,6 @@ export default function Home() {
           </li>
         </ul>
       </article>
-      <img src="/star.svg" alt="déco étoile" className="h-20 mt-5 self-center" />
-    </main >
+    </div >
   );
 }

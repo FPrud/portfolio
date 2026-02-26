@@ -80,7 +80,7 @@ export default function curriculumPage() {
   });
 
   return (
-    <main id="page entière" className="flex flex-1 flex-col w-full p-5">
+    <div id="page entière" className="flex flex-1 flex-col w-full">
 
       <article id="article" className="flex flex-col pb-5">
         <h1 id="title" className="text-center Horizon text-3xl pb-5">Curriculum</h1>
@@ -99,7 +99,6 @@ export default function curriculumPage() {
       <div className="flex justify-center w-full overflow-auto">
         <Curriculum cvRef={cvRef} />
       </div>
-      <Footer />
-    </main >
+    </div >
   );
 };

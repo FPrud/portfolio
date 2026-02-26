@@ -98,7 +98,7 @@
 }
 
 .bg-cloud {
-  background-image: linear-gradient(rgb(253, 247, 240, 0.5), rgba(253, 247, 240, 0.5)), url('/cloud.webp');
+  background-image: linear-gradient(rgb(253, 247, 240, 0.33), rgba(253, 247, 240, 0.5)), url('/cloud.webp');
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
@@ -107,6 +107,22 @@
 
 .bg-cloud-2 {
   background-image: linear-gradient(rgb(253, 247, 240, 0.5), rgba(253, 247, 240, 0.5)), url('/cloud2.webp');
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+
+.bg-cloud-3 {
+  background-image: linear-gradient(rgb(253, 247, 240, 0.5), rgba(253, 247, 240, 0.5)), url('/cloud3.webp');
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+
+.bg-cloud-4 {
+  background-image: linear-gradient(rgb(253, 247, 240, 0.5), rgba(253, 247, 240, 0.5)), url('/cloud4.webp');
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
