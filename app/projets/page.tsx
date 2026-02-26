@@ -6,7 +6,7 @@ export default async function projectsPage() {
     const projects = await getProjects();
 
     return (
-        <div id="page entière" className="flex flex-col flex-1 bg-cloud-2">
+        <div id="page entière" className="flex flex-col flex-1 p-5 bg-cloud-2 overflow-auto">
             <article id="article" className="flex flex-col">
                 <h1 id="title" className="text-center Horizon text-3xl mb-5">Projets</h1>
                 <p id="content" className="self-center text-justify mb-5">
@@ -67,6 +67,8 @@ export default async function projectsPage() {
                     ))}
                 </div>
             </div>
+
+            <Footer />
         </div>
     );
 }

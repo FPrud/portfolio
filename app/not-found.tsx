@@ -10,6 +10,8 @@ export default function notFound() {
                     Désolé, la page que vous recherchez n'existe pas.
                 </p>
             </article>
-        </div >
+
+            <Footer />
+        </div>
     );
 };

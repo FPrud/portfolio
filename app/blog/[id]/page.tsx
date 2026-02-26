@@ -27,7 +27,7 @@ export default async function BlogPost({
     const nextPost = await getNextBlogPost(postId);
 
     return (
-        <div id="page entière" className="flex flex-col flex-1 bg-cloud">
+        <div id="page entière" className="flex flex-col flex-1 p-5 overflow-auto">
             <article id="article" className="flex flex-col mb-5">
                 <h1 id="title" className="Horizon text-3xl">{blogPost.title}</h1>
                 <time className="text-gray-600 mb-5 block">
@@ -59,6 +59,8 @@ export default async function BlogPost({
                     <div></div>
                 )}
             </div>
+
+            <Footer />
         </div>
     );
 }

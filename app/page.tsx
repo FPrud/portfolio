@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div id="page entière" className="flex flex-col flex-1 bg-cloud">
+    <div id="page entière" className="flex flex-col flex-1 p-5 bg-cloud overflow-auto">
       <article id="article" className="flex flex-col">
         <h1 id="title" className="text-center Horizon text-4xl break-all">
           Félix

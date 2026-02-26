@@ -16,14 +16,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col antialiased bg-(--color-background)">
-        <header>
-          <Navbar />
-        </header>
-        <main className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 mt-12 pt-5">
-          {children}
-        </main>
-        <Footer />
+      <body className="flex flex-col antialiased bg-(--color-background) h-screen w-screen overflow-hidden">
+        <div className="flex flex-col flex-1 overflow-hidden">
+          <header>
+            <Navbar />
+          </header>
+
+          <main className="flex-1 overflow-auto w-full mt-12">
+            <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+              {children}
+            </div>
+          </main>
+          
+        </div>
+        
       </body>
     </html>
   );
